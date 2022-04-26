@@ -15,12 +15,12 @@ Manager.prototype.getOfficeNumber = function () {
     console.log("Office Number: " + this.officeNumber);
 };
 
-const bill = new Manager("Bill", 54321, "Bill@gmail.com", 69);
+// const bill = new Manager("Bill", 54321, "Bill@gmail.com", 69);
 
-bill.getName();
-bill.getId();
-bill.getEmail();
-bill.getRole();
-bill.getOfficeNumber();
+// bill.getName();
+// bill.getId();
+// bill.getEmail();
+// bill.getRole();
+// bill.getOfficeNumber();
 
 module.exports = Manager;
