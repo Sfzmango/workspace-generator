@@ -51,7 +51,7 @@ To start the program, please open the perfect-readme directory on terminal and t
         
 ## <ins> Demonstration: </ins>
         
-![Demonstration]([![Demonstration](https://iconape.com/wp-content/png_logo_vector/youtube-2017-icon-logo.png)](https://youtu.be/ebvxvSwYhlo)<br><br> )
+[![Demonstration](https://iconape.com/wp-content/png_logo_vector/youtube-2017-icon-logo.png)](https://youtu.be/ebvxvSwYhlo)<br><br>
 <br><br>   
 
 ## <ins> Links: </ins>
