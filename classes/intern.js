@@ -12,12 +12,12 @@ Intern.prototype.getSchool = function () {
     console.log("School: " + this.school);
 };
 
-const sarah = new Intern("Sarah", 98765, "sarah@gmail.com", "UC Berkeley Extension");
+// const sarah = new Intern("Sarah", 98765, "sarah@gmail.com", "UC Berkeley Extension");
 
-sarah.getName();
-sarah.getId();
-sarah.getEmail();
-sarah.getRole();
-sarah.getSchool();
+// sarah.getName();
+// sarah.getId();
+// sarah.getEmail();
+// sarah.getRole();
+// sarah.getSchool();
 
 module.exports = Intern;
