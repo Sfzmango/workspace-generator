@@ -4,9 +4,8 @@ class Employee {
         this.name = name;
         this.id = id;
         this.email = email;
+        this.role = "Employee";
     }
-
-    role = "Employee";
 
     getName() {
         console.log(this.name);
@@ -31,3 +30,5 @@ joey.getName();
 joey.getId();
 joey.getEmail();
 joey.getRole();
+
+module.exports = Employee;
