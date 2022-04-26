@@ -11,12 +11,16 @@ class Manager extends Employee {
     }
 }
 
+Manager.prototype.getOfficeNumber = function () {
+    console.log("Office Number: " + this.officeNumber);
+};
+
 const bill = new Manager("Bill", 54321, "Bill@gmail.com", 69);
 
 bill.getName();
 bill.getId();
 bill.getEmail();
 bill.getRole();
-console.log(bill.officeNumber);
+bill.getOfficeNumber();
 
 module.exports = Manager;

@@ -6,23 +6,23 @@ class Employee {
         this.email = email;
         this.role = "Employee";
     }
-
-    getName() {
-        console.log(this.name);
-    }
-
-    getId() {
-        console.log(this.id);
-    }
-
-    getEmail() {
-        console.log(this.email);
-    }
-
-    getRole() {
-        console.log(this.role);
-    }
 }
+
+Employee.prototype.getName = function () {
+    console.log("Name: " + this.name);
+};
+
+Employee.prototype.getId = function () {
+    console.log("ID: " + this.id);
+};
+
+Employee.prototype.getEmail = function () {
+    console.log("Email: " + this.email);
+};
+
+Employee.prototype.getRole = function () {
+    console.log("Role: " + this.role);
+};
 
 const joey = new Employee("Joey", 12345, "joey@gmail.com");
 
