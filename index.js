@@ -6,6 +6,7 @@ const fs = require("fs");
 const Engineer = require("./classes/engineer");
 const Intern = require("./classes/intern");
 const Manager = require("./classes/manager");
+const templateBuilder = require('./src/templateBuilder')
 
 // array for the roles that the user can select;
 const rolesArr = ["Engineer", "Intern", "Done"];
@@ -127,8 +128,8 @@ async function askRole(elem) {
                 console.log("manager =>", allManager, "engineer(s) =>", allEng, "intern(s) =>", allInt)
                 // ------------- add to html here
 
-
-                return allManager, allEng, allInt;
+                templateBuilder(allManager, allEng, allInt);
+                return;
             }
         })
 }
