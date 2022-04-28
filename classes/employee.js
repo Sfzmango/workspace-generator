@@ -24,11 +24,4 @@ Employee.prototype.getRole = function () {
     console.log("Role: " + this.role);
 };
 
-// const joey = new Employee("Joey", 12345, "joey@gmail.com");
-
-// joey.getName();
-// joey.getId();
-// joey.getEmail();
-// joey.getRole();
-
 module.exports = Employee;

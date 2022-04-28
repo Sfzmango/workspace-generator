@@ -12,12 +12,4 @@ Engineer.prototype.getGithub = function () {
     console.log("Github Username: " + this.githubUsername);
 };
 
-// const mary = new Engineer("Mary", 67890, "mary@gmail.com", "marycodes");
-
-// mary.getName();
-// mary.getId();
-// mary.getEmail();
-// mary.getRole();
-// mary.getGithub();
-
 module.exports = Engineer;
