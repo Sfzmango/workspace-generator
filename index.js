@@ -7,14 +7,15 @@ const Engineer = require("./classes/engineer");
 const Intern = require("./classes/intern");
 const Manager = require("./classes/manager");
 
+// array for the roles that the user can select;
 const rolesArr = ["Engineer", "Intern", "Done"];
 
+//empty arrays to push employee data to
 const engineerArr = [];
 const internArr = [];
 const managerArr = [];
 
-
-// loops if the user is not done inputting people to the workspace
+// loops if the user is not done inputting people to the workspace. takes in an argument to save added employees
 async function askRole(elem) {
 
     inquirer
@@ -103,44 +104,31 @@ async function askRole(elem) {
                 console.log(util.inspect({ 'The following users have been created': { engineers: JSON.stringify(engineerArr), interns: JSON.stringify(internArr), managers: JSON.stringify(managerArr) } }, true, 10))
 
                 // Deconstructs each of the keys from the managerArr into a variable that is usable
+                let allManager = [];
                 for (const element of managerArr) {
-                    let curMan = element;
-                    let curName = curMan.name;
-                    let curId = curMan.id;
-                    let curEmail = curMan.email;
-                    let curRole = curMan.role;
-                    let curOn = curMan.officeNumber;
-                    console.log(curName, curRole, curId, curEmail, curOn);
-                    // ------- add to html here
-
+                    // ------- deconstructs out of class and pushes it into an array of all managers
+                    allManager.push({ name: element.name, role: element.role, id: element.id, email: element.email, officeNumber: element.officeNumber })
                 }
 
                 // Deconstructs each of the keys from the engineerArr into a variable that is usable
+                let allEng = [];
                 for (const element of engineerArr) {
-                    let curEng = element;
-                    let curName = curEng.name;
-                    let curId = curEng.id;
-                    let curEmail = curEng.email;
-                    let curRole = curEng.role;
-                    let curGit = curEng.githubUsername;
-                    console.log(curName, curRole, curId, curEmail, curGit);
-                    // ------- add to html here
-
+                    // ------- deconstructs out of class and pushes it into an array of all engineers
+                    allEng.push({ name: element.name, role: element.role, id: element.id, email: element.email, github: element.githubUsername })
                 }
 
                 // Deconstructs each of the keys from the internArr into a variable that is usable
+                let allInt = [];
                 for (const element of internArr) {
-                    let curInt = element;
-                    let curName = curInt.name;
-                    let curId = curInt.id;
-                    let curEmail = curInt.email;
-                    let curRole = curInt.role;
-                    let curSchool = curInt.school;
-                    console.log(curName, curRole, curId, curEmail, curSchool);
-                    // ------- add to html here
-
+                    // ------- deconstructs out of class and pushes it into an array of all interns
+                    allInt.push({ name: element.name, role: element.role, id: element.id, email: element.email, school: element.school })
                 }
-                return //{ engineerArr, internArr, manager };
+
+                console.log("manager =>", allManager, "engineer(s) =>", allEng, "intern(s) =>", allInt)
+                // ------------- add to html here
+
+
+                return allManager, allEng, allInt;
             }
         })
 }
@@ -189,6 +177,7 @@ async function start() {
             askRole(manager)
         })
 }
+
 
 // runs the start function
 start();
