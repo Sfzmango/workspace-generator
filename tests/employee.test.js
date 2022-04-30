@@ -4,7 +4,7 @@ describe("EmployeeTest", () => {
     describe("Initialization", () => {
         it("Checks if the name input works for employee class", () => {
             let mary = new Employee("Mary", 67890, "mary@gmail.com", "marycodes");
-            let maryName = mary.name
+            let maryName = mary.name;
             expect(maryName).toEqual("Mary");
         });
         it("Checks if the id input works for employee class", () => {
@@ -22,5 +22,5 @@ describe("EmployeeTest", () => {
             let maryRole = mary.role;
             expect(maryRole).toEqual("Employee");
         });
-    })
-})
+    });
+});

@@ -17,7 +17,7 @@ describe("EmployeeTest", () => {
             let maryEmail = mary.email;
             expect(maryEmail).toEqual("mary@gmail.com");
         });
-        it("Checks if the github input works for Intern class", () => {
+        it("Checks if the school input works for Intern class", () => {
             let mary = new Intern("Mary", 67890, "mary@gmail.com", "UC Berkeley");
             let marySchool = mary.school;
             expect(marySchool).toEqual("UC Berkeley");
