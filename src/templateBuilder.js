@@ -12,7 +12,7 @@ function templateBuilder(allManager, allEng, allInt) {
     <div class="card-body">
         <ul class="list-group">
             <li class="list-group-item">ID:${elem.id}</li>
-            <li class="list-group-item">Email:${elem.email}</li>
+            <li class="list-group-item"><a href="mailto:${elem.email}">Email:${elem.email}</a></li>
             <li class="list-group-item">Office Number:${elem.officeNumber}</li>
         </ul>
     </div>
@@ -31,8 +31,8 @@ function templateBuilder(allManager, allEng, allInt) {
         <div class="card-body">
             <ul class="list-group">
                 <li class="list-group-item">ID:${elem.id}</li>
-                <li class="list-group-item">Email:${elem.email}</li>
-                <li class="list-group-item">Github:${elem.github}</li>
+                <li class="list-group-item"><a href="mailto:${elem.email}">Email:${elem.email}</a></li>
+                <li class="list-group-item"><a href="https://github.com/${elem.github}">Github:${elem.github}</a></li>
             </ul>
         </div>
     </div>
@@ -50,7 +50,7 @@ function templateBuilder(allManager, allEng, allInt) {
             <div class="card-body">
                 <ul class="list-group">
                     <li class="list-group-item">ID:${elem.id}</li>
-                    <li class="list-group-item">Email:${elem.email}</li>
+                    <li class="list-group-item"><a href="mailto:${elem.email}">Email:${elem.email}</a></li>
                     <li class="list-group-item">School:${elem.school}</li>
                 </ul>
             </div>
